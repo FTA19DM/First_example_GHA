@@ -20,12 +20,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Configurar Python
-          uses: actions/setup-python@v3
-          with: 
-            python-version: '3.10'
+        uses: actions/setup-python@v2
+        with: 
+          python-version: '3.10'
 
       # Runs a set of commands using the runners shell
       - name: Instalar dependencias
-          run: pip install -r requirements.txt
+        run: pip install -r requirements.txt
       - name: Ejecutar pruebas
-          run: python -m pytest
+        run: python -m pytest
