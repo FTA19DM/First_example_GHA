@@ -5,6 +5,8 @@ name: Prueba de Python
 on:
   pull_request:
     branches: [ "main" ]
+  commit:
+    branches: ["main"]
 
 jobs:
   test:
